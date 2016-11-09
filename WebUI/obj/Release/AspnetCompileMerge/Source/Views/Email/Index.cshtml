@@ -1,0 +1,138 @@
+﻿@model IEnumerable<WebUI.Models.Email>
+
+@{
+    ViewBag.Title = "Email";
+}
+<div class="box">
+    <div class="box-header with-border">
+        <h3 class="box-title">Email</h3>
+        <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+                <i class="fa fa-minus"></i>
+            </button>
+        </div>
+    </div>
+    <div class="box-body">
+        <div id="columnchart_material" class="custom-chart">
+        </div>
+    </div>
+
+    <div class="box-body">
+        <table class="table table-bordered table-stibed dataTable">
+            <thead>
+                <tr role="row">
+                    <th>
+                        Afsender
+                        @*@Html.DisplayNameFor(model => model.Sender)*@
+                    </th>
+                    <th>
+                        Modtager
+                        @*@Html.DisplayNameFor(model => model.Recipiant)*@
+                    </th>
+                    <th>
+                        Dato - Modtaget
+                        @*@Html.DisplayNameFor(model => model.ReceivedDate)*@
+                    </th>
+                    <th>
+                        Emne
+                        @*@Html.DisplayNameFor(model => model.Subject)*@
+                    </th>
+                    <th>Temaer</th>
+                </tr>
+            </thead>
+            <tbody >
+                @foreach (var mail in Model)
+            {
+                    <tr id="drag" role="row" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <td class="clickable-row" data-href="@Url.Action("Details", "Email", new { id = mail.ID })">
+                            @Html.DisplayFor(modelItem => mail.Sender)
+                        </td>
+                        <td class="clickable-row" data-href="@Url.Action("Details", "Email", new { id = mail.ID })">
+                            @Html.DisplayFor(modelItem => mail.Recipiant)
+                        </td>
+                        <td class="clickable-row" data-href="@Url.Action("Details", "Email", new { id = mail.ID })">
+                            @Html.DisplayFor(modelItem => mail.ReceivedDate)
+                        </td>
+                        <td class="clickable-row" data-href="@Url.Action("Details", "Email", new { id = mail.ID })">
+                            @Html.DisplayFor(modelItem => mail.Subject)
+                        </td>
+                        <td>
+                            <select>
+                                @foreach (var sc in mail.SearchCriteria)
+                                {
+                                    foreach (var theme in sc.Themes)
+                                    {
+                                        <option>@Html.DisplayFor(modelItem => theme.Title)</option>
+                                    }
+                                }
+                            </select>
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="box-body">
+        <div id="columnchart_material" class="custom-chart">
+        </div>
+    </div>
+
+    <div class="box-body">
+        <table class="table table-bordered table-stibed dataTable">
+            <thead>
+                <tr role="row">
+                    <th>
+                        Afsender
+                        @*@Html.DisplayNameFor(model => model.Sender)*@
+                    </th>
+                    <th>
+                        Modtager
+                        @*@Html.DisplayNameFor(model => model.Recipiant)*@
+                    </th>
+                    <th>
+                        Dato - Modtaget
+                        @*@Html.DisplayNameFor(model => model.ReceivedDate)*@
+                    </th>
+                    <th>
+                        Emne
+                        @*@Html.DisplayNameFor(model => model.Subject)*@
+                    </th>
+                    <th>Temaer</th>
+                </tr>
+            </thead>
+            <tbody ondrop="drop(event)" ondragover="allowDrop(event)">
+                @foreach (var mail in Model)
+            {
+                    <tr id="drag" role="row" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <td class="clickable-row" data-href="@Url.Action("Details", "Email", new { id = mail.ID })">
+                            @Html.DisplayFor(modelItem => mail.Sender)
+                        </td>
+                        <td class="clickable-row" data-href="@Url.Action("Details", "Email", new { id = mail.ID })">
+                            @Html.DisplayFor(modelItem => mail.Recipiant)
+                        </td>
+                        <td class="clickable-row" data-href="@Url.Action("Details", "Email", new { id = mail.ID })">
+                            @Html.DisplayFor(modelItem => mail.ReceivedDate)
+                        </td>
+                        <td class="clickable-row" data-href="@Url.Action("Details", "Email", new { id = mail.ID })">
+                            @Html.DisplayFor(modelItem => mail.Subject)
+                        </td>
+                        <td>
+                            <select>
+                                @foreach (var sc in mail.SearchCriteria)
+                                {
+                                    foreach (var theme in sc.Themes)
+                                    {
+                                        <option>@Html.DisplayFor(modelItem => theme.Title)</option>
+                                    }
+                                }
+                            </select>
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

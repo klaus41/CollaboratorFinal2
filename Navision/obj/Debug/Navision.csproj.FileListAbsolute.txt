@@ -1,0 +1,382 @@
+D:\EliteIT\Collaboration v2\Navision\bin\roslyn\csc.exe
+D:\EliteIT\Collaboration v2\Navision\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\EliteIT\Collaboration v2\Navision\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\EliteIT\Collaboration v2\Navision\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\EliteIT\Collaboration v2\Navision\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\EliteIT\Collaboration v2\Navision\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\EliteIT\Collaboration v2\Navision\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\EliteIT\Collaboration v2\Navision\bin\roslyn\System.Collections.Immutable.dll
+D:\EliteIT\Collaboration v2\Navision\bin\roslyn\System.Reflection.Metadata.dll
+D:\EliteIT\Collaboration v2\Navision\bin\roslyn\vbc.exe
+D:\EliteIT\Collaboration v2\Navision\bin\roslyn\VBCSCompiler.exe
+D:\EliteIT\Collaboration v2\Navision\bin\roslyn\VBCSCompiler.exe.config
+D:\EliteIT\Collaboration v2\Navision\bin\Navision.dll.config
+D:\EliteIT\Collaboration v2\Navision\bin\Navision.dll
+D:\EliteIT\Collaboration v2\Navision\bin\Navision.pdb
+D:\EliteIT\Collaboration v2\Navision\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\EliteIT\Collaboration v2\Navision\bin\Microsoft.Data.Edm.dll
+D:\EliteIT\Collaboration v2\Navision\bin\Microsoft.Data.OData.dll
+D:\EliteIT\Collaboration v2\Navision\bin\Microsoft.Data.Services.Client.dll
+D:\EliteIT\Collaboration v2\Navision\bin\System.Spatial.dll
+D:\EliteIT\Collaboration v2\Navision\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\EliteIT\Collaboration v2\Navision\bin\Microsoft.Data.Edm.xml
+D:\EliteIT\Collaboration v2\Navision\bin\Microsoft.Data.OData.xml
+D:\EliteIT\Collaboration v2\Navision\bin\Microsoft.Data.Services.Client.xml
+D:\EliteIT\Collaboration v2\Navision\bin\System.Spatial.xml
+D:\EliteIT\Collaboration v2\Navision\bin\de\Microsoft.Data.Edm.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\es\Microsoft.Data.Edm.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\it\Microsoft.Data.Edm.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\de\Microsoft.Data.OData.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\es\Microsoft.Data.OData.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\fr\Microsoft.Data.OData.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\it\Microsoft.Data.OData.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\ja\Microsoft.Data.OData.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\ko\Microsoft.Data.OData.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\ru\Microsoft.Data.OData.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\de\Microsoft.Data.Services.Client.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\es\Microsoft.Data.Services.Client.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\fr\Microsoft.Data.Services.Client.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\it\Microsoft.Data.Services.Client.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\ja\Microsoft.Data.Services.Client.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\ko\Microsoft.Data.Services.Client.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\ru\Microsoft.Data.Services.Client.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\de\System.Spatial.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\es\System.Spatial.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\fr\System.Spatial.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\it\System.Spatial.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\ja\System.Spatial.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\ko\System.Spatial.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\ru\System.Spatial.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\zh-Hans\System.Spatial.resources.dll
+D:\EliteIT\Collaboration v2\Navision\bin\zh-Hant\System.Spatial.resources.dll
+D:\EliteIT\Collaboration v2\Navision\obj\Debug\Navision.dll
+D:\EliteIT\Collaboration v2\Navision\obj\Debug\Navision.pdb
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\roslyn\csc.exe
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\roslyn\vbc.exe
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\roslyn\VBCSCompiler.exe
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\Navision.dll.config
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\Navision.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\Navision.pdb
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\Microsoft.Data.Edm.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\Microsoft.Data.OData.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\Microsoft.Data.Services.Client.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\System.Spatial.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\Microsoft.Data.Edm.xml
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\Microsoft.Data.OData.xml
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\Microsoft.Data.Services.Client.xml
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\System.Spatial.xml
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\de\System.Spatial.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\es\System.Spatial.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\fr\System.Spatial.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\it\System.Spatial.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\ja\System.Spatial.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\ko\System.Spatial.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\ru\System.Spatial.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\obj\Debug\Navision.csprojResolveAssemblyReference.cache
+C:\Users\klaus\Desktop\Collaborator-master\Navision\obj\Debug\Navision.dll
+C:\Users\klaus\Desktop\Collaborator-master\Navision\obj\Debug\Navision.pdb
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\roslyn\csc.exe
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\roslyn\vbc.exe
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\roslyn\VBCSCompiler.exe
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\Navision.dll.config
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\Navision.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\Navision.pdb
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\Microsoft.Data.Edm.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\Microsoft.Data.OData.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\Microsoft.Data.Services.Client.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\System.Spatial.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\Microsoft.Data.Edm.xml
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\Microsoft.Data.OData.xml
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\Microsoft.Data.Services.Client.xml
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\System.Spatial.xml
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\de\System.Spatial.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\es\System.Spatial.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\fr\System.Spatial.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\it\System.Spatial.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\ja\System.Spatial.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\ko\System.Spatial.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\ru\System.Spatial.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\obj\Debug\Navision.csprojResolveAssemblyReference.cache
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\obj\Debug\Navision.dll
+C:\Users\klaus\Documents\Visual Studio 2015\Projects\CollaboratorFinal\Navision\obj\Debug\Navision.pdb
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\roslyn\csc.exe
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\roslyn\vbc.exe
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\roslyn\VBCSCompiler.exe
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\Navision.dll.config
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\Navision.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\Navision.pdb
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\Microsoft.Data.Edm.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\Microsoft.Data.OData.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\Microsoft.Data.Services.Client.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\System.Spatial.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\Microsoft.Data.Edm.xml
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\Microsoft.Data.OData.xml
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\Microsoft.Data.Services.Client.xml
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\System.Spatial.xml
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\de\System.Spatial.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\es\System.Spatial.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\fr\System.Spatial.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\it\System.Spatial.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\ja\System.Spatial.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\ko\System.Spatial.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\ru\System.Spatial.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\obj\Debug\Navision.csprojResolveAssemblyReference.cache
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\obj\Debug\Navision.dll
+C:\Users\klaus\Desktop\Collaborator 02-11\Navision\obj\Debug\Navision.pdb
+C:\Udvikling\Collaborator v2\Navision\bin\roslyn\csc.exe
+C:\Udvikling\Collaborator v2\Navision\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Udvikling\Collaborator v2\Navision\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Udvikling\Collaborator v2\Navision\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Udvikling\Collaborator v2\Navision\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Udvikling\Collaborator v2\Navision\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Udvikling\Collaborator v2\Navision\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Udvikling\Collaborator v2\Navision\bin\roslyn\System.Collections.Immutable.dll
+C:\Udvikling\Collaborator v2\Navision\bin\roslyn\System.Reflection.Metadata.dll
+C:\Udvikling\Collaborator v2\Navision\bin\roslyn\vbc.exe
+C:\Udvikling\Collaborator v2\Navision\bin\roslyn\VBCSCompiler.exe
+C:\Udvikling\Collaborator v2\Navision\bin\roslyn\VBCSCompiler.exe.config
+C:\Udvikling\Collaborator v2\Navision\bin\Navision.dll.config
+C:\Udvikling\Collaborator v2\Navision\bin\Navision.dll
+C:\Udvikling\Collaborator v2\Navision\bin\Navision.pdb
+C:\Udvikling\Collaborator v2\Navision\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Udvikling\Collaborator v2\Navision\bin\Microsoft.Data.Edm.dll
+C:\Udvikling\Collaborator v2\Navision\bin\Microsoft.Data.OData.dll
+C:\Udvikling\Collaborator v2\Navision\bin\Microsoft.Data.Services.Client.dll
+C:\Udvikling\Collaborator v2\Navision\bin\System.Spatial.dll
+C:\Udvikling\Collaborator v2\Navision\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Udvikling\Collaborator v2\Navision\bin\Microsoft.Data.Edm.xml
+C:\Udvikling\Collaborator v2\Navision\bin\Microsoft.Data.OData.xml
+C:\Udvikling\Collaborator v2\Navision\bin\Microsoft.Data.Services.Client.xml
+C:\Udvikling\Collaborator v2\Navision\bin\System.Spatial.xml
+C:\Udvikling\Collaborator v2\Navision\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\de\Microsoft.Data.OData.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\es\Microsoft.Data.OData.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\it\Microsoft.Data.OData.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\de\Microsoft.Data.Services.Client.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\es\Microsoft.Data.Services.Client.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\it\Microsoft.Data.Services.Client.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\de\System.Spatial.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\es\System.Spatial.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\fr\System.Spatial.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\it\System.Spatial.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\ja\System.Spatial.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\ko\System.Spatial.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\ru\System.Spatial.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\zh-Hans\System.Spatial.resources.dll
+C:\Udvikling\Collaborator v2\Navision\bin\zh-Hant\System.Spatial.resources.dll
+C:\Udvikling\Collaborator v2\Navision\obj\Debug\Navision.dll
+C:\Udvikling\Collaborator v2\Navision\obj\Debug\Navision.pdb
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\roslyn\csc.exe
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\roslyn\vbc.exe
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\roslyn\VBCSCompiler.exe
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\Navision.dll.config
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\Navision.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\Navision.pdb
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\Microsoft.Data.Edm.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\Microsoft.Data.OData.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\Microsoft.Data.Services.Client.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\System.Spatial.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\Microsoft.Data.Edm.xml
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\Microsoft.Data.OData.xml
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\Microsoft.Data.Services.Client.xml
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\System.Spatial.xml
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\de\System.Spatial.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\es\System.Spatial.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\fr\System.Spatial.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\it\System.Spatial.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\ja\System.Spatial.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\ko\System.Spatial.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\ru\System.Spatial.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\obj\Debug\Navision.csprojResolveAssemblyReference.cache
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\obj\Debug\Navision.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\obj\Debug\Navision.pdb
