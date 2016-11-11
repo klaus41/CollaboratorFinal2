@@ -241,6 +241,7 @@
     <Compile Include="Context\CollaboratorContext.cs" />
     <Compile Include="Context\ContextInitializer.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\EmailAccountsController.cs" />
     <Compile Include="Controllers\EmailsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Navision\ContactListApiController.cs" />

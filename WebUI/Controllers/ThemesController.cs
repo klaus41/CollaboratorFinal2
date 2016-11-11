@@ -1,16 +1,22 @@
 ﻿using System.Web.Mvc;
 using Webui;
-using Webui.ServiceGateway;
+using WebUI.Models;
+using WebUI.ServiceGateway;
 
 namespace WebUI.Controllers
 {
 
     public class ThemesController : Controller
     {
-        EmailGateway _gateway = new EmailGateway();
+        ThemeGateway _gateway = new ThemeGateway();
 
         // GET: Themes
         public ActionResult Index()
+        {
+            return View(_gateway.GetThemes());
+        }
+
+        public ActionResult ThemeAdmin()
         {
             return View(_gateway.GetThemes());
         }
@@ -29,11 +35,11 @@ namespace WebUI.Controllers
 
         // POST: Themes/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Theme theme)
         {
             try
             {
-                // TODO: Add insert logic here
+                _gateway.Create(theme);
 
                 return RedirectToAction("Index");
             }
@@ -51,11 +57,11 @@ namespace WebUI.Controllers
 
         // POST: Themes/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(int id, Theme theme)
         {
             try
             {
-                // TODO: Add update logic here
+                _gateway.Edit(theme);
 
                 return RedirectToAction("Index");
             }
@@ -77,7 +83,7 @@ namespace WebUI.Controllers
         {
             try
             {
-                // TODO: Add delete logic here
+                _gateway.Delete(id);
 
                 return RedirectToAction("Index");
             }

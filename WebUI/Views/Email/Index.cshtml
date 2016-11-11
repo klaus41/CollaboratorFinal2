@@ -47,7 +47,7 @@
                     <th>Temaer</th>
                 </tr>
             </thead>
-            <tbody ondrop="drop(event)" ondragover="allowDrop(event)">
+            <tbody >
                 @foreach (var mail in Model)
             {
                     <tr id="drag" role="row" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">

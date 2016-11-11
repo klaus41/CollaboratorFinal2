@@ -18,15 +18,6 @@ namespace Webui.ServiceGateway
             return emails;
         }
 
-        public IEnumerable<Theme> GetThemes()
-        {
-            HttpClient client = GetHttpClient();
-
-            HttpResponseMessage response = client.GetAsync("api/themes/").Result;
-            var themes = response.Content.ReadAsAsync<IEnumerable<Theme>>().Result;
-            return themes;
-        }
-
         public Email GetEmail(int id)
         {
             HttpClient client = GetHttpClient();
@@ -36,33 +27,6 @@ namespace Webui.ServiceGateway
             return email;
         }
 
-        public Theme GetTheme(int id)
-        {
-            HttpClient client = GetHttpClient();
-
-            HttpResponseMessage response = client.GetAsync("api/themes/" + id).Result;
-            var theme = response.Content.ReadAsAsync<Theme>().Result;
-            return theme;
-        }
-
-        //private HttpClient GetHttpClient()
-        //{
-        //    HttpClient client = new HttpClient();
-        //    string baseAddress = WebConfigurationManager.AppSettings["CollaboratorDBAddress"];
-        //    client.BaseAddress = new Uri(baseAddress);
-        //    client.DefaultRequestHeaders.Accept.Clear();
-        //    client.DefaultRequestHeaders.Accept.Add(
-        //        new MediaTypeWithQualityHeaderValue("application/json")
-        //    );
-
-        //    //Create an Authorization header in order to authenticate as required
-        //    // by the ProductStoreBLL REST Service.
-        //    //string credentials = WebConfigurationManager.AppSettings["CollaboratorBLLRESTServiceCredentials"];
-        //    //client.DefaultRequestHeaders.Authorization =
-        //    //    new AuthenticationHeaderValue("Custom", credentials);
-
-        //    return client;
-        //}
 
     }
 }

@@ -32,5 +32,7 @@ namespace WebUI.Models
         public System.Data.Entity.DbSet<Email> Emails { get; set; }
 
         public System.Data.Entity.DbSet<Theme> Themes { get; set; }
+
+        public System.Data.Entity.DbSet<EmailAccount> EmailAccounts { get; set; }
     }
 }

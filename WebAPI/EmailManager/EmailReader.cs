@@ -78,6 +78,19 @@ namespace WebAPI.EmailManager
 
             return findResults;
         }
+        public FindItemsResults<Item> GetNewEmails(string userName, string password, DateTime searchdate)
+        {
+            Login(userName, password);
+
+            SearchFilter greaterthanfilter = new SearchFilter.IsGreaterThanOrEqualTo(ItemSchema.DateTimeReceived, searchdate);
+            //SearchFilter lessthanfilter = new SearchFilter.IsLessThan(ItemSchema.DateTimeReceived, searchdate.AddDays(1));
+            SearchFilter filter = new SearchFilter.SearchFilterCollection(LogicalOperator.And, greaterthanfilter);
+
+            ItemView view = new ItemView(100000);
+            FindItemsResults<Item> findResults = service.FindItems(WellKnownFolderName.Inbox, filter, view);
+
+            return findResults;
+        }
 
         private ExchangeService Login(string userName, string password)
         {

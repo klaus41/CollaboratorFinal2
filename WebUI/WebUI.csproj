@@ -203,6 +203,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ClientsController.cs" />
+    <Compile Include="Controllers\EmailAccountController.cs" />
     <Compile Include="Controllers\EmailController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -213,15 +214,18 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Email.cs" />
+    <Compile Include="Models\EmailAccount.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\NavisonContactModel.cs" />
     <Compile Include="Models\SearchCriteria.cs" />
     <Compile Include="Models\Theme.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceGateway\EmailAccountGateway.cs" />
     <Compile Include="ServiceGateway\GatewayClient.cs" />
     <Compile Include="ServiceGateway\NavisionGateway.cs" />
     <Compile Include="ServiceGateway\EmailGateway.cs" />
+    <Compile Include="ServiceGateway\ThemeGateway.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1203,6 +1207,12 @@
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Navision\Index.cshtml" />
     <Content Include="Views\Email\Details.cshtml" />
+    <Content Include="Views\Themes\ThemeAdmin.cshtml" />
+    <Content Include="Views\Themes\Create.cshtml" />
+    <Content Include="Views\Themes\Edit.cshtml" />
+    <Content Include="Views\Themes\Delete.cshtml" />
+    <Content Include="Views\EmailAccount\Index.cshtml" />
+    <Content Include="Views\EmailAccount\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

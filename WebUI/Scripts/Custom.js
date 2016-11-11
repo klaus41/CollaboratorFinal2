@@ -36,12 +36,20 @@ document.drag = function (ev) {
     ev.dataTransfer.setData("Text", ev.target.id);
 }
 
+
 document.drop = function (ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("Text");
-
-    ev.target. appendChild(document.getElementById(data));
-    console.log("Dropping");
+    var currentRow = document.getElementById(data);
+    var tableBody = ev.target.parentElement.parentElement;
+    var targetRow = ev.target.parentElement;
+    var whatWeNeed = 0;
+    for (var i = 0; i < tableBody.children.length; i++) {
+        if (tableBody.children[i] == targetRow) {
+            whatWeNeed = i;
+        }
+    }
+    tableBody.insertBefore(currentRow, tableBody.children[whatWeNeed + 1]);
 }
 
 
@@ -49,28 +57,4 @@ jQuery(document).ready(function ($) {
     $(".clickable-row").click(function () {
         window.document.location = $(this).data("href");
     });
-});
-
-jQuery(document).ready(function () {
-
-    var $tabs = $('#table-draggable2')
-    $("tbody.connectedSortable")
-        .sortable({
-            connectWith: ".connectedSortable",
-            items: "> tr:not(:first)",
-            appendTo: $tabs,
-            helper: "clone",
-            zIndex: 999990
-        })
-        .disableSelection();
-
-    var $tab_items = $(".nav-tabs > li", $tabs).droppable({
-        accept: ".connectedSortable tr",
-        hoverClass: "ui-state-hover",
-
-        drop: function (event, ui) {
-            return false;
-        }
-    });
-
 });

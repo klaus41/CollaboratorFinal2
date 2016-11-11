@@ -377,6 +377,5 @@ C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\ko\System.Spatial.r
 C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\ru\System.Spatial.resources.dll
 C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\bin\zh-Hant\System.Spatial.resources.dll
-C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\obj\Debug\Navision.csprojResolveAssemblyReference.cache
 C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\obj\Debug\Navision.dll
 C:\Users\klaus\Documents\CollaboratorFinal 7NOV\Navision\obj\Debug\Navision.pdb

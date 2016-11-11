@@ -21,6 +21,8 @@ namespace WebAPI.EmailManager
         Indexer indexer = new Indexer();
         List<Email> emails;
         FindItemsResults<Item> findResults;
+        DateTime searchdate;
+        List<Email> tempEmails;
 
         public void StartEmailThread()
         {
@@ -34,22 +36,44 @@ namespace WebAPI.EmailManager
         {
             while (!done)
             {
-                Debug.WriteLine("I just checked for new Email");
 
                 foreach (EmailAccount ea in db.EmailAccounts)
                 {
+                    tempEmails = new List<Email>();
 
-                    findResults = er.GetNewEmails(ea.EmailAddress, ea.Password);
+                    foreach (var email in db.Emails.Where(x => x.Recipiant == ea.EmailAddress))
+                    {
+                        tempEmails.Add(email);
+                    }
+                    if (tempEmails.Count() != 0)
+                    {
+                        var latest = tempEmails.OrderByDescending(m => m.ReceivedDate).FirstOrDefault();
+                        searchdate = latest.ReceivedDate.AddSeconds(1);
+                        findResults = er.GetNewEmails(ea.EmailAddress, ea.Password, searchdate);
+                    }
+                    else
+                    {
+                        if (ea.EmailAddress.Contains("Carsten") || ea.EmailAddress.Contains("carsten") || ea.EmailAddress.Contains("CARSTEN")
+                            || ea.EmailAddress.Contains("Henry") || ea.EmailAddress.Contains("henry") || ea.EmailAddress.Contains("HENRY"))
+                        {
+                            searchdate = new DateTime(2016, 9, 1);
+                            findResults = er.GetNewEmails(ea.EmailAddress, ea.Password, searchdate);
+                        }
+                        else
+                        {
+                            findResults = er.GetAllEmails(ea.EmailAddress, ea.Password);
+                        }
+                    }
+
+
                     emails = ew.EmailConverter(findResults);
                     if (emails.Count() != 0 && emails != null)
                     {
                         ew.SaveEmails(emails);
                         indexer.IndexNewEmails(emails);
                     }
-                    foreach (var item in emails)
-                    {
-                        Debug.WriteLine(item.ID);
-                    }
+                    Debug.WriteLine("I just checked for new Email");
+                    Debug.WriteLine(emails.Count());
                 }
                 Thread.Sleep(60000);
             }
