@@ -17,6 +17,7 @@ namespace WebAPI.EmailManager
         DbSet<Theme> themes;
         Email email;
         Theme theme;
+        EmailWriter ew = new EmailWriter();
 
         public void IndexAllEmails()
         {
@@ -41,25 +42,29 @@ namespace WebAPI.EmailManager
 
         public void IndexNewEmails(List<Email> emails)
         {
-            searchCriterias = db.SearchCriterias;
-
-            foreach (var searchCriteria in searchCriterias)
+            using (var ctx = new CollaboratorContext())
             {
-                foreach (var email in emails)
+                searchCriterias = ctx.SearchCriterias;
+
+                foreach (var searchCriteria in searchCriterias)
                 {
-                    if (email != null || searchCriteria != null)
+                    foreach (var email in emails)
                     {
-                        CheckForNormalCase(email, searchCriteria);
-                        CheckForLowerCase(email, searchCriteria);
-                        CheckForUpperCase(email, searchCriteria);
-                    }
-                    else
-                    {
-                        Debug.WriteLine("Email or searchcriteria = null");
+                        if (email != null || searchCriteria != null)
+                        {
+                            CheckForNormalCase(email, searchCriteria);
+                            CheckForLowerCase(email, searchCriteria);
+                            CheckForUpperCase(email, searchCriteria);
+                        }
+                        else
+                        {
+                            Debug.WriteLine("Email or searchcriteria = null");
+                        }
+                        ctx.Emails.Add(email);
                     }
                 }
+                ctx.SaveChanges();
             }
-            db.SaveChanges();
         }
 
         private void CheckForUpperCase(Email email, SearchCriteria searchCriteria)
@@ -90,9 +95,9 @@ namespace WebAPI.EmailManager
                                         email.Sender != null && email.Sender.Contains(c))
             {
                 //email.SearchCriteria.Add(searchCriteria);
-                if (!searchCriteria.Emails.Contains(email))
+                if (!email.SearchCriteria.Contains(searchCriteria))
                 {
-                    searchCriteria.Emails.Add(email);
+                    email.SearchCriteria.Add(searchCriteria);
                 }
             }
             else { }

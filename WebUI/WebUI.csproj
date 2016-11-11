@@ -1213,6 +1213,7 @@
     <Content Include="Views\Themes\Delete.cshtml" />
     <Content Include="Views\EmailAccount\Index.cshtml" />
     <Content Include="Views\EmailAccount\Create.cshtml" />
+    <Content Include="Views\EmailAccount\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

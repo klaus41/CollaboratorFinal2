@@ -4,30 +4,47 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.EmailAddress)
-        </th>
-        <th></th>
-    </tr>
+<div class="box">
+    <div class="box-header with-border">
+        <h3 class="box-title">Konti</h3>
+        <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+                <i class="fa fa-minus"></i>
+            </button>
+        </div>
+    </div>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.EmailAddress)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
-        </td>
-    </tr>
-}
 
-</table>
+    <div class="box-body">
+        <table class="table table-bordered table-stibed dataTable">
+            <thead>
+                <tr role="row">
+                    <th>
+                        Email
+                        @*@Html.DisplayNameFor(model => model.Sender)*@
+                    </th>
+                    <th>
+                        Options
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var account in Model)
+            {
+                    <tr>
+                        <td class="clickable-row" data-href="@Url.Action("Details", "EmailAccount", new { id = account.ID })">
+                            @Html.DisplayFor(modelItem => account.EmailAddress)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Details", "Details", new { id = account.ID }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = account.ID })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <br />
+        <a href="@Url.Action("Create", "EmailAccount")" class="btn btn-info pull-right margin-bottom">Tilføj</a>
+    </div>
+</div>

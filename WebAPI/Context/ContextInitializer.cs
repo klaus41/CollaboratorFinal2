@@ -23,6 +23,8 @@ namespace WebAPI.Context
             SearchCriteria sc7 = context.SearchCriterias.Add(new SearchCriteria() { Criteria = new DateTime(2016, 8, 7).ToString() });
             SearchCriteria sc8 = context.SearchCriterias.Add(new SearchCriteria() { Criteria = "Ronni" });
             SearchCriteria sc9 = context.SearchCriterias.Add(new SearchCriteria() { Criteria = "Finans" });
+            SearchCriteria sc10 = context.SearchCriterias.Add(new SearchCriteria() { Criteria = "Hamburg" });
+
 
 
 
@@ -51,17 +53,18 @@ namespace WebAPI.Context
             //    SearchCriteria = { sc1, sc2 }
             //});
 
-            Theme theme1 = context.Themes.Add(new Theme() { Title = "Carsten", SearchCriterias = { sc1} });
+            Theme theme1 = context.Themes.Add(new Theme() { Title = "Carsten", SearchCriterias = { sc1 } });
             Theme theme2 = context.Themes.Add(new Theme() { Title = "Klaus", SearchCriterias = { sc6 } });
             Theme theme3 = context.Themes.Add(new Theme() { Title = "EliteIT", SearchCriterias = { sc5, sc1, sc6, sc8 } });
             Theme theme4 = context.Themes.Add(new Theme() { Title = "Ronni", SearchCriterias = { sc8 } });
             Theme theme5 = context.Themes.Add(new Theme() { Title = "Swienty", SearchCriterias = { sc2 } });
             Theme theme6 = context.Themes.Add(new Theme() { Title = "Finans", SearchCriterias = { sc9 } });
+            Theme theme7 = context.Themes.Add(new Theme() { Title = "Hamburg", SearchCriterias = { sc10 } });
 
 
 
             EmailAccount account1 = context.EmailAccounts.Add(new EmailAccount() { EmailAddress = "Klaus@eliteit.dk", Password = "Kg240789." });
-            //EmailAccount account2 = context.EmailAccounts.Add(new EmailAccount() { EmailAddress = "ronni@eliteit.dk", Password = "oz1akhEI" });
+            EmailAccount account2 = context.EmailAccounts.Add(new EmailAccount() { EmailAddress = "ronni@eliteit.dk", Password = "oz1akhEI" });
 
             base.Seed(context);
         }

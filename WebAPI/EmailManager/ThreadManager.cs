@@ -69,7 +69,6 @@ namespace WebAPI.EmailManager
                     emails = ew.EmailConverter(findResults);
                     if (emails.Count() != 0 && emails != null)
                     {
-                        ew.SaveEmails(emails);
                         indexer.IndexNewEmails(emails);
                     }
                     Debug.WriteLine("I just checked for new Email");
