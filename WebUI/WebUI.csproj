@@ -1212,8 +1212,9 @@
     <Content Include="Views\Themes\Edit.cshtml" />
     <Content Include="Views\Themes\Delete.cshtml" />
     <Content Include="Views\EmailAccount\Index.cshtml" />
-    <Content Include="Views\EmailAccount\Create.cshtml" />
     <Content Include="Views\EmailAccount\Delete.cshtml" />
+    <Content Include="Views\EmailAccount\Create.cshtml" />
+    <Content Include="Views\EmailAccount\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

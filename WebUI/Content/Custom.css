@@ -30,7 +30,6 @@ label {
 }
 
     label:after {
-        content: '<>';
         font: 11px "Consolas", monospace;
         color: #aaa;
         -webkit-transform: rotate(90deg);

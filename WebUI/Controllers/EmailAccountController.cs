@@ -70,7 +70,7 @@ namespace WebUI.Controllers
         // GET: EmailAccount/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            return View(_gateway.GetEmailAccount(id));
         }
 
         // POST: EmailAccount/Delete/5

@@ -36,15 +36,16 @@
                         <td class="clickable-row" data-href="@Url.Action("Details", "EmailAccount", new { id = account.ID })">
                             @Html.DisplayFor(modelItem => account.EmailAddress)
                         </td>
-                        <td>
-                            @Html.ActionLink("Details", "Details", new { id = account.ID }) |
-                            @Html.ActionLink("Delete", "Delete", new { id = account.ID })
+                        <td align="right">
+                            <a href="@Url.Action("Details", "EmailAccount",  new { id = account.ID })" class="btn btn-info ">Detaljer</a>
+                            <a href="@Url.Action("Delete", "EmailAccount", new { id = account.ID })" class="btn btn-adn ">Slet</a>
+
                         </td>
                     </tr>
                 }
             </tbody>
         </table>
         <br />
-        <a href="@Url.Action("Create", "EmailAccount")" class="btn btn-info pull-right margin-bottom">Tilføj</a>
+        <a href="@Url.Action("Create", "EmailAccount")" class="btn btn-info pull-right">Tilføj</a>
     </div>
 </div>

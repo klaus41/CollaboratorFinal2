@@ -22,7 +22,7 @@
     <script src="~/Scripts/Custom.js?ver=<%= Application['version'] %>" type="text/javascript"></script>
 
 </head>
-<body class="hold-transition skin-purple-light sidebar-mini">
+<body class="hold-transition skin-purple-light sidebar-mini fixed">
     <!-- Site wrapper -->
     <div class="wrapper">
         <header class="main-header">
@@ -84,12 +84,13 @@
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
-        <footer class="main-footer">
-            @RenderPage("_Footer.cshtml")
-        </footer>
+       
         <!-- Add the sidebar's background. This div must be placed
              immediately after the control sidebar -->
         <div class="control-sidebar-bg"></div>
+        <footer class="main-footer fixed">
+            @RenderPage("_Footer.cshtml")
+        </footer>
     </div>
     <!-- ./wrapper -->
     @*@Scripts.Render("~/bundles/jquery")
