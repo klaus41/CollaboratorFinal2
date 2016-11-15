@@ -208,6 +208,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\Navision\NavisionController.cs" />
+    <Compile Include="Controllers\SearchCriteriaController.cs" />
     <Compile Include="Controllers\ThemesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -225,6 +226,7 @@
     <Compile Include="ServiceGateway\GatewayClient.cs" />
     <Compile Include="ServiceGateway\NavisionGateway.cs" />
     <Compile Include="ServiceGateway\EmailGateway.cs" />
+    <Compile Include="ServiceGateway\SearchCriteriaGateway.cs" />
     <Compile Include="ServiceGateway\ThemeGateway.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -1215,6 +1217,11 @@
     <Content Include="Views\EmailAccount\Delete.cshtml" />
     <Content Include="Views\EmailAccount\Create.cshtml" />
     <Content Include="Views\EmailAccount\Details.cshtml" />
+    <Content Include="Views\SearchCriteria\Index.cshtml" />
+    <Content Include="Views\SearchCriteria\Details.cshtml" />
+    <Content Include="Views\SearchCriteria\Create.cshtml" />
+    <Content Include="Views\SearchCriteria\Edit.cshtml" />
+    <Content Include="Views\SearchCriteria\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

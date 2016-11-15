@@ -34,5 +34,7 @@ namespace WebUI.Models
         public System.Data.Entity.DbSet<Theme> Themes { get; set; }
 
         public System.Data.Entity.DbSet<EmailAccount> EmailAccounts { get; set; }
+
+        public System.Data.Entity.DbSet<WebUI.Models.SearchCriteria> SearchCriterias { get; set; }
     }
 }
