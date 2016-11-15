@@ -4,30 +4,49 @@
     ViewBag.Title = "ThemeAdmin";
 }
 
-<h2>ThemeAdmin</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th></th>
-    </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Title)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
-        </td>
-    </tr>
-}
+<div class="box">
+    <div class="box-header with-border">
+        <h3 class="box-title">Temaer</h3>
+        <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+                <i class="fa fa-minus"></i>
+            </button>
+        </div>
+    </div>
 
-</table>
+
+    <div class="box-body">
+        <table class="table table-bordered table-stibed dataTable">
+            <thead>
+                <tr role="row">
+                    <th>
+                        Tema
+                        @*@Html.DisplayNameFor(model => model.Sender)*@
+                    </th>
+                    <th>
+                        Options
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var theme in Model)
+            {
+                    <tr>
+                        <td class="clickable-row" data-href="@Url.Action("Details", "EmailAccount", new { id = theme.ID })">
+                            @Html.DisplayFor(modelItem => theme.Title)
+                        </td>
+                        <td align="right">
+                            <a href="@Url.Action("Details", "Themes",  new { id = theme.ID })" class="btn btn-info ">Detaljer</a>
+                            <a href="@Url.Action("Delete", "Themes", new { id = theme.ID })" class="btn btn-adn ">Slet</a>
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <br />
+        <a href="@Url.Action("Create", "Themes")" class="btn btn-info pull-right">Tilføj</a>
+    </div>
+</div>

@@ -41,7 +41,7 @@ namespace WebUI.Controllers
             {
                 _gateway.Create(theme);
 
-                return RedirectToAction("Index");
+                return RedirectToAction("ThemeAdmin");
             }
             catch
             {
@@ -63,7 +63,7 @@ namespace WebUI.Controllers
             {
                 _gateway.Edit(theme);
 
-                return RedirectToAction("Index");
+                return RedirectToAction("ThemeAdmin");
             }
             catch
             {
@@ -74,7 +74,7 @@ namespace WebUI.Controllers
         // GET: Themes/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            return View(_gateway.GetTheme(id));
         }
 
         // POST: Themes/Delete/5
@@ -85,7 +85,7 @@ namespace WebUI.Controllers
             {
                 _gateway.Delete(id);
 
-                return RedirectToAction("Index");
+                return RedirectToAction("ThemeAdmin");
             }
             catch
             {
