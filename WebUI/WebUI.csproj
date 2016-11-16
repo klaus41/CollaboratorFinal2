@@ -207,6 +207,7 @@
     <Compile Include="Controllers\EmailController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\Navision\IndexController.cs" />
     <Compile Include="Controllers\Navision\NavisionController.cs" />
     <Compile Include="Controllers\SearchCriteriaController.cs" />
     <Compile Include="Controllers\ThemesController.cs" />
@@ -221,6 +222,7 @@
     <Compile Include="Models\NavisonContactModel.cs" />
     <Compile Include="Models\SearchCriteria.cs" />
     <Compile Include="Models\Theme.cs" />
+    <Compile Include="Models\ThemeManagerModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceGateway\EmailAccountGateway.cs" />
     <Compile Include="ServiceGateway\GatewayClient.cs" />
@@ -1222,6 +1224,7 @@
     <Content Include="Views\SearchCriteria\Create.cshtml" />
     <Content Include="Views\SearchCriteria\Edit.cshtml" />
     <Content Include="Views\SearchCriteria\Delete.cshtml" />
+    <Content Include="Views\Index\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

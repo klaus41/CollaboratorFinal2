@@ -21,7 +21,7 @@ namespace WebAPI.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("Collaborator", throwIfV1Schema: false)
         {
         }
         
