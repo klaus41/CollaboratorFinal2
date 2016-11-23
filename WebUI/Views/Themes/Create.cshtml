@@ -3,8 +3,6 @@
 @{
     ViewBag.Title = "Create";
 }
-
-
 <div class="box">
     <div class="box-header with-border">
         <h3 class="box-title">Opret tema</h3>
@@ -14,6 +12,34 @@
             </button>
         </div>
     </div>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="register-box-body">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group has-feedback">
+            @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control", @placeholder = "Titel" } })
+            @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+        </div>
+        <div class="form-group has-feedback">
+            @Html.EditorFor(model => model.SearchCriterias, new { htmlAttributes = new { @class = "form-control",  @placeholder = "Søgekriterie" } })
+            @Html.ValidationMessageFor(model => model.SearchCriterias, "", new { @class = "text-danger" })
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+        </div>
+        <div class="row">
+
+            <div class="col-xs-3" style="float:right">
+                <div>
+                    <input type="submit" value="Tilføj" class="btn btn-info pull-right" style="width:100px" />
+                </div>
+            </div>
+            <div class="col-xs-3" style="float:left">
+                <a href="@Url.Action("Index", "EmailAccount")" class="btn btn-adn pull-left">Fortryd</a>
+            </div>
+        </div>
+    </div>
+}
 
     @using (Html.BeginForm())
     {
@@ -24,6 +50,11 @@
                 @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control", @placeholder = "Titel" } })
                 @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
                 <span class="glyphicon glyphicon-book form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+                @Html.EditorFor(model => model.SearchCriterias, new { htmlAttributes = new { @class = "form-control",  @placeholder = "Søgekriterier" } })
+                @Html.ValidationMessageFor(model => model.SearchCriterias, "", new { @class = "text-danger" })
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
             </div>
             <div class="row">
 

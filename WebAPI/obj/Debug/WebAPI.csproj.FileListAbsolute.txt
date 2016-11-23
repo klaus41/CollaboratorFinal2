@@ -962,3 +962,7 @@ C:\Users\klaus\Desktop\Collab\WebAPI\bin\zh-Hant\System.Spatial.resources.dll
 C:\Users\klaus\Desktop\Collab\WebAPI\obj\Debug\WebAPI.csprojResolveAssemblyReference.cache
 C:\Users\klaus\Desktop\Collab\WebAPI\obj\Debug\WebAPI.dll
 C:\Users\klaus\Desktop\Collab\WebAPI\obj\Debug\WebAPI.pdb
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\WebAPI\bin\DAL.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\WebAPI\bin\Model.dll
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\WebAPI\bin\DAL.pdb
+C:\Users\klaus\Documents\CollaboratorFinal 7NOV\WebAPI\bin\Model.pdb

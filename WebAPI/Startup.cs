@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Owin;
 using Owin;
-using WebAPI.EmailManager;
+using DAL;
 
 [assembly: OwinStartup(typeof(WebAPI.Startup))]
 
@@ -11,11 +11,11 @@ namespace WebAPI
 {
     public partial class Startup
     {
+        Facade _facade = new Facade();
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
-            ThreadManager tm = new ThreadManager();
-            tm.Start();
+            _facade.ThreadManager.Start();
         }
     }
 }

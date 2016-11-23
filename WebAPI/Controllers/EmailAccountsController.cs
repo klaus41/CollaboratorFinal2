@@ -1,33 +1,30 @@
-﻿using System;
+﻿using DAL;
+using Model.Model;
 using System.Collections.Generic;
-using System.Data;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
-using WebAPI.Context;
-using WebAPI.Models;
 
 namespace WebAPI.Controllers
 {
     public class EmailAccountsController : ApiController
     {
-        private CollaboratorContext db = new CollaboratorContext();
+        private Facade _facade = new Facade();
 
         // GET: api/EmailAccounts
-        public IQueryable<EmailAccount> GetEmailAccounts()
+        public IEnumerable<EmailAccount> GetEmailAccounts()
         {
-            return db.EmailAccounts;
+            return _facade.EmailAccountRepo.GetAll(); ;
         }
 
         // GET: api/EmailAccounts/5
         [ResponseType(typeof(EmailAccount))]
         public IHttpActionResult GetEmailAccount(int id)
         {
-            EmailAccount emailAccount = db.EmailAccounts.Find(id);
+            EmailAccount emailAccount = _facade.EmailAccountRepo.Get(id);
             if (emailAccount == null)
             {
                 return NotFound();
@@ -50,22 +47,13 @@ namespace WebAPI.Controllers
                 return BadRequest();
             }
 
-            db.Entry(emailAccount).State = EntityState.Modified;
-
             try
             {
-                db.SaveChanges();
+                _facade.EmailAccountRepo.Edit(emailAccount);
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!EmailAccountExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                throw;
             }
 
             return StatusCode(HttpStatusCode.NoContent);
@@ -80,8 +68,14 @@ namespace WebAPI.Controllers
                 return BadRequest(ModelState);
             }
 
-            db.EmailAccounts.Add(emailAccount);
-            db.SaveChanges();
+            try
+            {
+                _facade.EmailAccountRepo.Add(emailAccount);
+            }
+            catch (DbUpdateException)
+            {
+                throw;
+            }
 
             return CreatedAtRoute("DefaultApi", new { id = emailAccount.ID }, emailAccount);
         }
@@ -90,30 +84,16 @@ namespace WebAPI.Controllers
         [ResponseType(typeof(EmailAccount))]
         public IHttpActionResult DeleteEmailAccount(int id)
         {
-            EmailAccount emailAccount = db.EmailAccounts.Find(id);
+            EmailAccount emailAccount = _facade.EmailAccountRepo.Get(id);
             if (emailAccount == null)
             {
                 return NotFound();
             }
 
-            db.EmailAccounts.Remove(emailAccount);
-            db.SaveChanges();
+            _facade.EmailAccountRepo.Remove(id);
 
             return Ok(emailAccount);
         }
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
-        private bool EmailAccountExists(int id)
-        {
-            return db.EmailAccounts.Count(e => e.ID == id) > 0;
-        }
+        
     }
 }
