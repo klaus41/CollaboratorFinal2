@@ -39,3 +39,6 @@ C:\Users\klaus\Documents\CollaboratorFinal 7NOV\DAL\obj\Debug\DAL.dll
 C:\Users\klaus\Documents\CollaboratorFinal 7NOV\DAL\obj\Debug\DAL.pdb
 C:\Users\klaus\Documents\CollaboratorFinal 7NOV\DAL\bin\Microsoft.Exchange.WebServices.dll
 C:\Users\klaus\Documents\CollaboratorFinal 7NOV\DAL\bin\Microsoft.Exchange.WebServices.xml
+D:\EliteIT\Collaboration v2\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\EliteIT\Collaboration v2\DAL\obj\Debug\DAL.dll
+D:\EliteIT\Collaboration v2\DAL\obj\Debug\DAL.pdb
