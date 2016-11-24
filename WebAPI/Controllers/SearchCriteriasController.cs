@@ -1,33 +1,31 @@
-﻿using System;
+﻿using DAL;
+using Model.Model;
 using System.Collections.Generic;
-using System.Data;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
-using WebAPI.Context;
-using WebAPI.Models;
 
 namespace WebAPI.Controllers
 {
     public class SearchCriteriasController : ApiController
     {
-        private CollaboratorContext db = new CollaboratorContext();
+        private Facade _facade = new Facade();
 
         // GET: api/SearchCriterias
-        public IQueryable<SearchCriteria> GetSearchCriterias()
+        public IEnumerable<SearchCriteria> GetSearchCriterias()
         {
-            return db.SearchCriterias;
+            return _facade.SearchCriteriaRepo.GetAll();
         }
 
         // GET: api/SearchCriterias/5
         [ResponseType(typeof(SearchCriteria))]
         public IHttpActionResult GetSearchCriteria(int id)
         {
-            SearchCriteria searchCriteria = db.SearchCriterias.Find(id);
+            SearchCriteria searchCriteria = _facade.SearchCriteriaRepo.Get(id);
+
             if (searchCriteria == null)
             {
                 return NotFound();
@@ -49,23 +47,13 @@ namespace WebAPI.Controllers
             {
                 return BadRequest();
             }
-
-            db.Entry(searchCriteria).State = EntityState.Modified;
-
             try
             {
-                db.SaveChanges();
+                _facade.SearchCriteriaRepo.Edit(searchCriteria);
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!SearchCriteriaExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                throw;
             }
 
             return StatusCode(HttpStatusCode.NoContent);
@@ -79,9 +67,14 @@ namespace WebAPI.Controllers
             {
                 return BadRequest(ModelState);
             }
-
-            db.SearchCriterias.Add(searchCriteria);
-            db.SaveChanges();
+            try
+            {
+                _facade.SearchCriteriaRepo.Add(searchCriteria);
+            }
+            catch (DbUpdateException)
+            {
+                throw;
+            }
 
             return CreatedAtRoute("DefaultApi", new { id = searchCriteria.ID }, searchCriteria);
         }
@@ -90,30 +83,16 @@ namespace WebAPI.Controllers
         [ResponseType(typeof(SearchCriteria))]
         public IHttpActionResult DeleteSearchCriteria(int id)
         {
-            SearchCriteria searchCriteria = db.SearchCriterias.Find(id);
+            SearchCriteria searchCriteria = _facade.SearchCriteriaRepo.Get(id);
             if (searchCriteria == null)
             {
                 return NotFound();
             }
 
-            db.SearchCriterias.Remove(searchCriteria);
-            db.SaveChanges();
+            _facade.SearchCriteriaRepo.Remove(id);
 
             return Ok(searchCriteria);
         }
 
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
-        private bool SearchCriteriaExists(int id)
-        {
-            return db.SearchCriterias.Count(e => e.ID == id) > 0;
-        }
     }
 }

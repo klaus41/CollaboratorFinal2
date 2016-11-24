@@ -1,0 +1,75 @@
+﻿@model WebUI.Models.ThemeManagerModel
+@{
+    ViewBag.Title = "Index";
+}
+<div class="row">
+    <div class="col-md-6">
+        <div class="box box-widget">
+            <div class="box-header with-border">
+                <h3 class="box-title">Temaer</h3>
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="box-body">
+                <table class="table table-bordered table-stibed dataTable">
+                    <thead>
+                        <tr role="row">
+                            <th>
+                                Tema
+                                @*@Html.DisplayNameFor(model => model.Sender)*@
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var theme in Model.themes)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => theme.Title)
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="box box-widget">
+            <div class="box-header with-border">
+                <h3 class="box-title">Email</h3>
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="box-body">
+                <table class="table table-bordered table-stibed dataTable">
+                    <thead>
+                        <tr role="row">
+                            <th>
+                                Søgekriterie
+                                @*@Html.DisplayNameFor(model => model.Sender)*@
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var sc in Model.searchCriterias)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => sc.Criteria)
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,14 +1,18 @@
+<<<<<<< HEAD
 ﻿using Microsoft.Exchange.WebServices.Data;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
+=======
+﻿using DAL;
+using Model.Model;
+using System.Collections.Generic;
+using System.Data.Entity.Infrastructure;
+>>>>>>> 04eae6104b6a40a9be4195c22af14e48e731b2d3
 using System.Net;
 using System.Web.Http;
 using System.Web.Http.Description;
-using WebAPI.Context;
-using WebAPI.EmailManager;
-using WebAPI.Models;
 
 namespace WebAPI.Controllers
 {
@@ -18,25 +22,20 @@ namespace WebAPI.Controllers
 
     public class EmailsController : ApiController
     {
-        EmailReader er = new EmailReader();
-        EmailWriter ew = new EmailWriter();
-        Indexer indexer = new Indexer();
-        List<Email> emails;
-        List<Email> allEmails = new List<Email>();
-        FindItemsResults<Item> findResults;
-        private CollaboratorContext db = new CollaboratorContext();
+         private Facade _facade = new Facade();
 
         // GET: api/Emails
-        public IQueryable<Email> GetEmails()
+        public IEnumerable<Email> GetEmails()
         {
-            return db.Emails.Include(s => s.SearchCriteria);
+            return _facade.EmailRepo.GetAll();
         }
 
         // GET: api/Emails/5
         [ResponseType(typeof(Email))]
         public IHttpActionResult GetEmail(int id)
         {
-            Email email = db.Emails.Find(id);
+            Email email = _facade.EmailRepo.Get(id);
+
             if (email == null)
             {
                 return NotFound();
@@ -58,23 +57,13 @@ namespace WebAPI.Controllers
             {
                 return BadRequest();
             }
-
-            db.Entry(email).State = EntityState.Modified;
-
             try
             {
-                db.SaveChanges();
+                _facade.EmailRepo.Edit(email);
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!EmailExists(id.ToString()))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                throw;
             }
 
             return StatusCode(HttpStatusCode.NoContent);
@@ -89,22 +78,13 @@ namespace WebAPI.Controllers
                 return BadRequest(ModelState);
             }
 
-            db.Emails.Add(email);
-
             try
             {
-                db.SaveChanges();
+                _facade.EmailRepo.Add(email);
             }
             catch (DbUpdateException)
             {
-                if (EmailExists(email.ID.ToString()))
-                {
-                    return Conflict();
-                }
-                else
-                {
-                    throw;
-                }
+                throw;
             }
 
             return CreatedAtRoute("DefaultApi", new { id = email.ID }, email);
@@ -112,90 +92,19 @@ namespace WebAPI.Controllers
 
         // DELETE: api/Emails/5
         [ResponseType(typeof(Email))]
-        public IHttpActionResult DeleteEmail(string id)
+        public IHttpActionResult DeleteEmail(int id)
         {
-            Email email = db.Emails.Find(id);
+            Email email = _facade.EmailRepo.Get(id);
             if (email == null)
             {
                 return NotFound();
             }
-
-            db.Emails.Remove(email);
-            db.SaveChanges();
+            
+            _facade.EmailRepo.Remove(id);
 
             return Ok(email);
         }
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
-        private bool EmailExists(string id)
-        {
-            return db.Emails.Count(e => e.ID.ToString() == id) > 0;
-        }
-
-        [HttpGet]
-        [Route("checkmail")]
-        [ResponseType(typeof(void))]
-        public IHttpActionResult SaveAndIndexEmails()
-        {
-
-
-            foreach (EmailAccount ea in db.EmailAccounts)
-            {
-                findResults = er.GetAllEmails(ea.EmailAddress, ea.Password);
-                emails = ew.EmailConverter(findResults);
-                if (emails.Count() != 0 && emails != null)
-                {
-                    ew.SaveEmails(emails);
-                    indexer.IndexAllEmails();
-                }
-                foreach (var email in emails)
-                {
-                    allEmails.Add(email);
-                }
-            }
-            ThreadManager tm = new ThreadManager();
-            tm.StartEmailThread();
-            return Ok(allEmails);
-        }
-        [HttpGet]
-        [Route("CheckNewMail")]
-        [ResponseType(typeof(void))]
-        public IHttpActionResult CheckNewMail()
-        {
-            foreach (EmailAccount ea in db.EmailAccounts)
-            {
-                findResults = er.GetNewEmails(ea.EmailAddress, ea.Password);
-                emails = ew.EmailConverter(findResults);
-                if (emails.Count() != 0 && emails != null)
-                {
-                    ew.SaveEmails(emails);
-                    indexer.IndexNewEmails(emails);
-                }
-                foreach (var email in emails)
-                {
-                    allEmails.Add(email);
-                }
-            }
-            return Ok(allEmails);
-        }
-        [HttpGet]
-        [Route("Index")]
-        [ResponseType(typeof(void))]
-        public IHttpActionResult Index()
-        {
-            Indexer indexer = new Indexer();
-            indexer.IndexAllEmails();
-
-            return Ok();
-        }
+        
 
     }
 }

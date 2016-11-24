@@ -20,7 +20,12 @@ namespace WebAPI.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+<<<<<<< HEAD
         public ApplicationDbContext() : base("Collaborator", throwIfV1Schema: false)
+=======
+        public ApplicationDbContext()
+            : base("Collaborator", throwIfV1Schema: false)
+>>>>>>> 04eae6104b6a40a9be4195c22af14e48e731b2d3
         {
         }
 
