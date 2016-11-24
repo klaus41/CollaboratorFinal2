@@ -11,11 +11,14 @@ namespace WebUI.ServiceGateway
     {
         public IEnumerable<NavisonContactModel> GetContacts()
         {
-            HttpClient client = GetHttpClient();
+            AddAuthorizationHeader();
 
+            HttpClient client = GetHttpClient();
             HttpResponseMessage response = client.GetAsync("api/nav/contacts").Result;
+            response.EnsureSuccessStatusCode();
             var contacts = response.Content.ReadAsAsync<IEnumerable<NavisonContactModel>>().Result;
             return contacts;
         }
+
     }
 }

@@ -8,6 +8,8 @@ using Navision.Repository;
 
 namespace WebAPI.Controllers.Navision
 {
+    [Authorize]
+
     [RoutePrefix("api/nav")]
 
     public class ContactListApiController : ApiController

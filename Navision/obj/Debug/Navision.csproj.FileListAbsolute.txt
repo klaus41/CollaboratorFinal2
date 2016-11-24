@@ -443,3 +443,4 @@ C:\Users\klaus\Desktop\Collab\Navision\bin\zh-Hant\System.Spatial.resources.dll
 C:\Users\klaus\Desktop\Collab\Navision\obj\Debug\Navision.csprojResolveAssemblyReference.cache
 C:\Users\klaus\Desktop\Collab\Navision\obj\Debug\Navision.dll
 C:\Users\klaus\Desktop\Collab\Navision\obj\Debug\Navision.pdb
+D:\EliteIT\Collaboration v2\Navision\obj\Debug\Navision.csprojResolveAssemblyReference.cache

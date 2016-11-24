@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System.Net.Http;
+using System.Web.Mvc;
 using Webui;
 using Webui.ServiceGateway;
 using WebUI;
@@ -13,9 +14,20 @@ namespace WebUI.Controllers
         // GET: Email
         public ActionResult Index()
         {
-            return View(_gateway.GetEmails());
-        }
+            try
+            {
+                return View(_gateway.GetEmails());
+            }
+            catch (HttpRequestException ex)
+            {
+                if (ex.Message.Contains("401"))
+                    return RedirectToAction("Login", "Account", new { returnUrl = Request.Url.LocalPath });
 
+                ViewBag.Error = ex.Message;
+                return View("Error");
+            }
+
+        }
         // GET: Email/Details/5
         public ActionResult Details(int id)
         {

@@ -4,6 +4,8 @@ using System.Data.Entity;
 using System.Diagnostics;
 using System.Linq;
 using System.Web;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 using WebAPI.Models;
 
 namespace WebAPI.Context
@@ -64,9 +66,62 @@ namespace WebAPI.Context
 
 
             //EmailAccount account1 = context.EmailAccounts.Add(new EmailAccount() { EmailAddress = "Klaus@eliteit.dk", Password = "Kg240789." });
-            EmailAccount account2 = context.EmailAccounts.Add(new EmailAccount() { EmailAddress = "ronni@eliteit.dk", Password = "oz1akhEI" });
-
+            //EmailAccount account2 = context.EmailAccounts.Add(new EmailAccount() { EmailAddress = "ronni@eliteit.dk", Password = "oz1akhEI" });
+            CreateRolesandUsers();
             base.Seed(context);
         }
+        private void CreateRolesandUsers()
+        {
+            ApplicationDbContext context = new ApplicationDbContext();
+
+            var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
+            var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
+
+
+            // In Startup iam creating first Admin Role and creating a default Admin User    
+            if (!roleManager.RoleExists("Admin"))
+            {
+
+                // first we create Admin role   
+                var role = new IdentityRole();
+                role.Name = "Admin";
+                roleManager.Create(role);
+
+                //Here we create a Admin super user who will maintain the website                  
+
+                var user = new ApplicationUser();
+                user.UserName = "ronni@eliteit.dk";
+                user.Email = "ronni@eliteit.dk";
+
+                string userPWD = "Bohrs6Vej";
+
+                var chkUser = userManager.Create(user, userPWD);
+
+                //Add default User to Role Admin   
+                if (chkUser.Succeeded)
+                {
+                    var result1 = userManager.AddToRole(user.Id, "Admin");
+
+                }
+            }
+
+            // creating Creating Manager role    
+            if (!roleManager.RoleExists("Manager"))
+            {
+                var role = new IdentityRole();
+                role.Name = "Manager";
+                roleManager.Create(role);
+
+            }
+
+            // creating Creating Employee role    
+            if (!roleManager.RoleExists("Employee"))
+            {
+                var role = new IdentityRole();
+                role.Name = "Employee";
+                roleManager.Create(role);
+
+            }
+        }
     }
-}
+    }

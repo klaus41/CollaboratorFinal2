@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System.Net.Http;
+using System.Web.Mvc;
 
 namespace WebUI.Controllers
 {
@@ -23,9 +24,23 @@ namespace WebUI.Controllers
             return View();
         }
 
+
         public ActionResult Test()
         {
-            return View();
+            try
+            {
+                //var products = gateway.GetProducts();
+                return View();
+            }
+            catch (HttpRequestException ex)
+            {
+                if (ex.Message.Contains("401"))
+                    return RedirectToAction("Login", "Account", new { returnUrl = Request.Url.LocalPath });
+
+                ViewBag.Error = ex.Message;
+                return View("Error");
+            }
+
         }
     }
 }

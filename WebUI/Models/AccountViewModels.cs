@@ -51,7 +51,7 @@ namespace WebUI.Models
         [Required]
         [Display(Name = "Email")]
         [EmailAddress]
-        public string Email { get; set; }
+        public string Username { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
@@ -60,6 +60,8 @@ namespace WebUI.Models
 
         [Display(Name = "Remember me?")]
         public bool RememberMe { get; set; }
+
+
     }
 
     public class RegisterViewModel

@@ -38,20 +38,21 @@
         </a>
     </li>
 
-    <li class="treeview">
-        <a>
-            <i class="fa fa-files-o"></i><span>Administration</span>
-            <span class="pull-right-container">
+<li class="treeview">
+    <a>
+        <i class="fa fa-files-o"></i><span>Administration</span>
+        <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
             </span>
-        </a>
-        <ul class="treeview-menu" style="display: none;">
-            <li><a href="@Url.Action("Index", "EmailAccount")"><i class="fa fa-circle-o"></i>Konti</a></li>
-            <li><a href="@Url.Action("ThemeAdmin", "Themes")"><i class="fa fa-circle-o"></i>Temaer</a></li>
-            <li><a href="@Url.Action("Index", "SearchCriteria")"><i class="fa fa-circle-o"></i>Søgekriterier</a></li>
-            <li><a href="~/Views/Themes/ThemeAdmin.cshtml"><i class="fa fa-circle-o"></i>Manuel indeksering</a></li>
-        </ul>
-    </li>
+    </a>
+    <ul class="treeview-menu" style="display: none;">
+        <li><a href="@Url.Action("Index", "EmailAccount")"><i class="fa fa-circle-o"></i>Konti</a></li>
+        <li><a href="@Url.Action("ThemeAdmin", "Themes")"><i class="fa fa-circle-o"></i>Temaer</a></li>
+        <li><a href="@Url.Action("Index", "SearchCriteria")"><i class="fa fa-circle-o"></i>Søgekriterier</a></li>
+        <li><a href="~/Views/Themes/ThemeAdmin.cshtml"><i class="fa fa-circle-o"></i>Manuel indeksering</a></li>
+    </ul>
+</li>
+
     @*<li class="treeview active">
             <a href="#">
                 <i class="fa fa-files-o"></i>

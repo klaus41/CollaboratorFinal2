@@ -12,8 +12,9 @@ namespace WebUI.ServiceGateway
 
         public IEnumerable<Theme> GetThemes()
         {
-            HttpClient client = GetHttpClient();
+            AddAuthorizationHeader();
 
+            HttpClient client = GetHttpClient();
             HttpResponseMessage response = client.GetAsync("api/themes/").Result;
             var themes = response.Content.ReadAsAsync<IEnumerable<Theme>>().Result;
             return themes;
@@ -24,6 +25,9 @@ namespace WebUI.ServiceGateway
             HttpClient client = GetHttpClient();
 
             HttpResponseMessage response = client.GetAsync("api/themes/" + id).Result;
+
+            response.EnsureSuccessStatusCode();
+
             var theme = response.Content.ReadAsAsync<Theme>().Result;
             return theme;
        }

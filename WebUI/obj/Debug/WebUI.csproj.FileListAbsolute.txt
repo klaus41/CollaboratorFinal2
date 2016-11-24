@@ -95,7 +95,6 @@ D:\EliteIT\Collaboration v2\WebUI\bin\Microsoft.Owin.Security.Twitter.xml
 D:\EliteIT\Collaboration v2\WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\EliteIT\Collaboration v2\WebUI\obj\Debug\WebUI.dll
 D:\EliteIT\Collaboration v2\WebUI\obj\Debug\WebUI.pdb
-D:\EliteIT\Collaboration v2\WebUI\obj\Debug\WebUI.csprojResolveAssemblyReference.cache
 C:\Users\klaus\Desktop\Collaborator-master\WebUI\bin\ApplicationInsights.config
 C:\Users\klaus\Desktop\Collaborator-master\WebUI\bin\roslyn\csc.exe
 C:\Users\klaus\Desktop\Collaborator-master\WebUI\bin\roslyn\csc.exe.config
@@ -586,3 +585,8 @@ C:\Users\klaus\Desktop\Collab\WebUI\bin\Microsoft.Owin.Security.MicrosoftAccount
 C:\Users\klaus\Desktop\Collab\WebUI\obj\Debug\WebUI.csprojResolveAssemblyReference.cache
 C:\Users\klaus\Desktop\Collab\WebUI\obj\Debug\WebUI.dll
 C:\Users\klaus\Desktop\Collab\WebUI\obj\Debug\WebUI.pdb
+D:\EliteIT\Collaboration v2\WebUI\bin\System.Web.Http.dll
+D:\EliteIT\Collaboration v2\WebUI\bin\System.Web.Http.WebHost.dll
+D:\EliteIT\Collaboration v2\WebUI\bin\System.Web.Http.xml
+D:\EliteIT\Collaboration v2\WebUI\bin\System.Web.Http.WebHost.xml
+D:\EliteIT\Collaboration v2\WebUI\obj\Debug\WebUI.csprojResolveAssemblyReference.cache

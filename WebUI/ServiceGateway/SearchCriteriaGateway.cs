@@ -10,7 +10,6 @@ namespace WebUI.ServiceGateway
     public class SearchCriteriaGateway : GatewayClient
     {
 
-
         public IEnumerable<SearchCriteria> GetSearchCriterias()
         {
             HttpClient client = GetHttpClient();
